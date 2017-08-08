@@ -1,1 +1,3 @@
 .idea/
+Tutorial/*.beam
+*.beam
