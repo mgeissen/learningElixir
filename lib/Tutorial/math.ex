@@ -1,23 +1,13 @@
-# Test in console: elixir math.ex
+# Execute script: elixir math.ex
+# Compile script: elixirc math.ex
 
 defmodule Math do
-  def sum(a,b) do
-    a + b
-  end
-
+  def sum(a,b), do: a + b
   def mult(a,b) do
     a * b
   end
-
-  def zero?(0) do
-    true
-  end
-  def zero?(x) when is_integer(x) do
-    false
-  end
-
+  def zero?(0), do: true
+  def zero?(x) when is_integer(x), do: false
 end
 
-IO.puts Math.mult(4,6)
-IO.puts Math.zero?(50)
-IO.puts Math.zero?(0)
+
