@@ -8,5 +8,15 @@ defmodule Main do
     IO.puts Concat.join("Hello", "world", "-")
 
     Recursion.print_multiple_times("Moin",5)
+    IO.puts Math.sum_list([1,2,3,4],0)
+    Main.showAll(Math.double_each([1,2,3,4]))
+  end
+
+  def showAll([head| tail]) do
+    IO.puts(head)
+    showAll(tail)
+  end
+  def showAll([]) do
+
   end
 end
