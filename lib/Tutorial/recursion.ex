@@ -4,8 +4,7 @@ defmodule Recursion do
   end
 
   def print_multiple_times(msg, n) do
-    list = []
-    list ++ print_multiple_times(msg, n-1)
-    [msg] ++ list
+    [msg] ++ print_multiple_times(msg, n-1)
   end
 end
+
