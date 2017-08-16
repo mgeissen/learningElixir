@@ -37,4 +37,13 @@ defmodule Enumerables do
       Enum.take(stream, 10)
     end
 
+    def removeLineBreaksFromList([head | tail]) do
+      newHead = String.replace(head, "\n","")
+      [newHead] ++ removeLineBreaksFromList(tail)
+    end
+
+    def removeLineBreaksFromList([]) do
+       []
+    end
+
 end
